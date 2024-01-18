@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://db.onlinewebfonts.com/c/b348f9993e0a2227b78408c438fd6fbc?family=Crossten-ExtraBold" rel="stylesheet">
+  <title>Tu Página Web</title>
+  <style>
+    @font-face {
+      font-family: "Crossten-ExtraBold";
+      src: url("https://db.onlinewebfonts.com/t/b348f9993e0a2227b78408c438fd6fbc.eot");
+      src: url("https://db.onlinewebfonts.com/t/b348f9993e0a2227b78408c438fd6fbc.eot?#iefix") format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/b348f9993e0a2227b78408c438fd6fbc.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/b348f9993e0a2227b78408c438fd6fbc.woff") format("woff"),
+        url("https://db.onlinewebfonts.com/t/b348f9993e0a2227b78408c438fd6fbc.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/b348f9993e0a2227b78408c438fd6fbc.svg#Crossten-ExtraBold") format("svg");
+    }
+
+    body {
+      background-color: white;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+    }
+
+    header {
+      height: 100px;
+      background-color: whitesmoke;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajustado el color de la sombra */
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-container {
+      text-decoration-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%; /* Ajusta según sea necesario */
+    }
+
+    .navbar {
+      margin-left: 50px;
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Espaciado entre elementos en la barra de navegación */
+      justify-content: space-between; /* Distribuir el espacio uniformemente */
+    }
+
+    .navbar a {
+      margin-right: 70px;
+      text-decoration: none; /* Elimina el subrayado */
+      color: #333; /* Cambia el color según sea necesario */
+      text-transform: uppercase; /* Convierte el texto a mayúsculas */
+      font-weight: bold; /* Establece el peso de la fuente como negrita */
+    }
+
+    .dropdown {
+      width: auto;
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      width: 50px;
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      width: 85px;
+      color: #333;
+      padding: 12px 16px;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      width: 50px;
+      display: block;
+    }
+
+    .get-in-touch-btn {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px 40px;
+      font-size: 16px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      margin-right: 75px;
+      white-space: nowrap; /* Evita el salto de línea automático */
+      height: 50px;
+      text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    }
+
+    .h1 {
+      font-weight: bold;
+      font-family: Crossten-ExtraBold;
+      font-size: 55px;
+      margin-left: 120px;
+      margin-top: 15px;
+    }
+
+    .image-container {
+      display: flex;
+      gap: 70px; /* Ajusta la separación entre las imágenes */
+      margin: 50px; /* Ajusta según sea necesario */
+    }
+
+    .image-container img {
+      width: 150px; /* Ajusta según sea necesario */
+      height: auto; /* Para mantener la proporción de la imagen */
+    }
+
+    .image-container .image-text {
+      text-align: center;
+      margin-top: 10px; /* Ajusta según sea necesario */
+    }
+  
+  </style>
+</head>
+<body>
+  <header style="width:100%;height:50px;">
+    <div class="logo">
+      <img src="../img/Paginas-Rediseñadas/bigdrop.png" style="margin-left:30px;width:200px;height:200px;">
+    </div>
+    <div class="navbar-container">
+      <div class="navbar">
+        <a href="#" style="text-decoration: underline; font-weight: bold;">Latest Work</a>
+        <div class="dropdown" style="width:auto;">
+          <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content" style="width:auto;">
+            <a href="#">Service 1</a>
+            <a href="#">Service 2</a>
+            <a href="#">Service 3</a>
+          </div>
+        </div>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+      </div>
+      <button class="get-in-touch-btn">Get in Touch</button>
+    </div>
+  </header>
+
+  <h1 class="h1" style="font-weight: bold;font-family: Crossten-ExtraBold; font-size:55px; margin-left:120px; margin-top:15px;">Experiences We've <br> Created</h1>
+
+  <div class="image-container" style="margin-top:40px; margin-left:150px;">
+    <div>
+      <img src="../img/Paginas-Rediseñadas/1.PNG" alt="Imagen 1" style="width:275px;height:300px;">
+      <p class="image-text" style="font-weight: bold;font-family: Crossten-ExtraBold; margin-left:-150px; font-size: 20px;">Altice Mobile</p>
+    </div>
+    <div>
+      <img src="../img/Paginas-Rediseñadas/2.PNG" alt="Imagen 2" style="width:275px;height:300px;">
+      <p class="image-text" style="font-weight: bold;font-family: Crossten-ExtraBold; margin-left:-145px; font-size: 20px;">Samsung Next</p>
+    </div>
+    <div>
+      <img src="../img/Paginas-Rediseñadas/3.PNG" alt="Imagen 3" style="width:275px;height:300px;">
+      <p class="image-text" style="font-weight: bold;font-family: Crossten-ExtraBold; margin-left: -120px; font-size: 20px;">Zero Mass Water</p>
+    </div>
+  </div>
+</body>
+</html>
